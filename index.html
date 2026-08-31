@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LNTruong - Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        zinc: {
+                            850: '#202022',
+                            900: '#18181b',
+                            950: '#09090b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-zinc-950 text-zinc-300 font-sans antialiased selection:bg-zinc-800 selection:text-white min-h-[100dvh] flex flex-col">
+
+    <main class="max-w-4xl mx-auto w-full px-6 py-24 md:py-32 flex-1">
+        <!-- Hero Section -->
+        <header class="mb-24">
+            <h1 class="text-4xl md:text-5xl font-semibold text-zinc-100 tracking-tight mb-6">
+                LNTruong.
+            </h1>
+            <p class="text-lg md:text-xl text-zinc-400 max-w-[45ch] leading-relaxed mb-8">
+                Software Developer focused on building robust systems and clean interfaces. I turn complex problems into simple, elegant code.
+            </p>
+            <div class="flex gap-4">
+                <a href="https://github.com/lenhattruong-blip" target="_blank" class="inline-flex items-center justify-center bg-zinc-100 text-zinc-950 px-5 py-2.5 text-sm font-medium hover:bg-white transition-colors duration-200">
+                    View GitHub
+                </a>
+                <a href="mailto:truongle1421@gmail.com" class="inline-flex items-center justify-center bg-transparent border border-zinc-800 text-zinc-300 px-5 py-2.5 text-sm font-medium hover:bg-zinc-900 transition-colors duration-200">
+                    Contact Me
+                </a>
+            </div>
+        </header>
+
+        <!-- Selected Projects -->
+        <section>
+            <h2 class="text-sm font-mono text-zinc-500 uppercase tracking-widest mb-8">Selected Work</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <a href="#" class="group block p-6 border border-zinc-800/50 bg-zinc-900/20 hover:bg-zinc-900/50 transition-colors duration-300">
+                    <h3 class="text-lg font-medium text-zinc-100 mb-2 group-hover:text-white transition-colors">Distributed Cache System</h3>
+                    <p class="text-sm text-zinc-400 leading-relaxed mb-4">
+                        A high-performance distributed caching layer built in Go. Handles 10k+ requests per second with automatic node discovery.
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="text-xs font-mono px-2 py-1 bg-zinc-800 text-zinc-300">Go</span>
+                        <span class="text-xs font-mono px-2 py-1 bg-zinc-800 text-zinc-300">gRPC</span>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="#" class="group block p-6 border border-zinc-800/50 bg-zinc-900/20 hover:bg-zinc-900/50 transition-colors duration-300">
+                    <h3 class="text-lg font-medium text-zinc-100 mb-2 group-hover:text-white transition-colors">CLI Workflow Tool</h3>
+                    <p class="text-sm text-zinc-400 leading-relaxed mb-4">
+                        A terminal-based workflow automation tool for developers. Integrates directly with Git and project management boards.
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="text-xs font-mono px-2 py-1 bg-zinc-800 text-zinc-300">Rust</span>
+                        <span class="text-xs font-mono px-2 py-1 bg-zinc-800 text-zinc-300">CLI</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="max-w-4xl mx-auto w-full px-6 py-8 border-t border-zinc-900">
+        <p class="text-xs text-zinc-500 font-mono">
+            © 2026 LNTruong. Built with intent.
+        </p>
+    </footer>
+
+</body>
+</html>
