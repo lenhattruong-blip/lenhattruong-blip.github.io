@@ -42,6 +42,8 @@ const vi = {
   yoloNote:'Đây là kết quả nhóm báo cáo, chưa được chạy lại độc lập. Đánh giá có mẫu của 64 lớp; khung hình liên quan lọt vào các tập khác nhau vẫn là nguy cơ làm điểm số lạc quan. Test mAP@0.5:0.95 không được lưu. FPS webcam chưa phải benchmark chuẩn hóa, triển khai Raspberry Pi 5 vẫn ở kế hoạch. Ảnh đường phố được giữ lại để xác minh nguồn ảnh trước khi công khai.',
   background:'Học vấn & công cụ', education:'HỌC VẤN', school:'Trường Đại học Ngoại ngữ – Tin học TP. Hồ Chí Minh',
   major:'Chuyên ngành: Kỹ thuật vi mạch', coursework:'Môn học liên quan',
+  training:'Đào tạo bổ sung', trainingTitle:'Unlock the Future of Chip Design - Physical Design',
+  trainingDetails:'Khóa học trực tuyến nhập môn, giới thiệu và hướng dẫn quy trình thiết kế vật lý vi mạch. Do Trung tâm Đào tạo Khu Công nghệ cao TP.HCM tổ chức, Tresemi thực hiện. Chứng nhận hoàn thành, 15–19/12/2025.',
   courses:'Hệ thống nhúng · Lập trình nhúng · Vi xử lý – Vi điều khiển · Thiết kế luận lý số · Internet vạn vật · Hệ thống thông minh',
   languages:'Ngôn ngữ lập trình', embedded:'Hệ thống nhúng & kết nối', tools:'Công cụ thiết kế & phát triển', data:'Dữ liệu & thị giác máy tính',
   nextStep:'BƯỚC TIẾP THEO', contactTitle:'Cùng tạo ra sản phẩm hữu ích.',
