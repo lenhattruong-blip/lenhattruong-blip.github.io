@@ -1,7 +1,7 @@
 'use strict';
 const vi = {
   skip:'Đến nội dung chính', portfolio:'HỒ SƠ KỸ THUẬT', navProjects:'Dự án', navBackground:'Học vấn',
-  available:'TÌM KIẾM CƠ HỘI THỰC TẬP', intern:'Tìm cơ hội thực tập',
+  available:'TÌM KIẾM CƠ HỘI THỰC TẬP',
   intro:'Sinh viên năm cuối HUFLIT, chuyên ngành Kỹ thuật vi mạch, có kinh nghiệm về phần cứng nhúng, tích hợp cảm biến và thị giác máy tính bằng Python. Mình mong muốn kết hợp các kỹ năng này để phát triển ứng dụng Edge AI.',
   location:'TP. Hồ Chí Minh, Việt Nam', download:'Tải CV tiếng Anh', focusLabel:'ĐỊNH HƯỚNG',
   focus:'Kết hợp phần cứng nhúng\nvới thị giác máy tính.', openingLabel:'PHẦN CỨNG / FIRMWARE / THỊ GIÁC MÁY TÍNH',
