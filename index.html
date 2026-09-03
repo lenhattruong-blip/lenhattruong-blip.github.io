@@ -1,91 +1,130 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LNTruong - Software Developer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        zinc: {
-                            850: '#202022',
-                            900: '#18181b',
-                            950: '#09090b',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Le Nhat Truong — HUFLIT final-year student pursuing an Embedded Systems internship. Explore STM32 hardware, ESP32 sensor integration and digital design projects.">
+  <meta property="og:title" content="Le Nhat Truong | Embedded Systems">
+  <meta property="og:description" content="From schematic to sensor data. STM32L4P5 hardware and ESP32-S3 greenhouse projects, with code, boards and measurements.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lntruong.is-a.dev/">
+  <meta property="og:image" content="https://lntruong.is-a.dev/assets/mcu-board.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Le Nhat Truong | Embedded Systems">
+  <meta name="twitter:description" content="STM32 hardware, ESP32 sensor integration and digital design. Engineering portfolio of Le Nhat Truong.">
+  <meta name="twitter:image" content="https://lntruong.is-a.dev/assets/mcu-board.png">
+  <link rel="canonical" href="https://lntruong.is-a.dev/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Le Nhat Truong | Embedded Systems</title>
+  <script>
+    try { const theme = localStorage.getItem('lnt-theme'); if (theme === 'dark' || theme === 'light') document.documentElement.dataset.theme = theme; } catch (_) {}
+  </script>
+  <script src="script.js" defer></script>
 </head>
-<body class="bg-zinc-950 text-zinc-300 font-sans antialiased selection:bg-zinc-800 selection:text-white min-h-[100dvh] flex flex-col">
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="Le Nhat Truong home">LNT<span> / </span><span class="wordmark-note" data-i18n="portfolio">ENGINEERING PORTFOLIO</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#projects" data-i18n="navProjects">Projects</a>
+      <a href="#background" data-i18n="navBackground">Background</a>
+      <div class="controls">
+        <button id="language-toggle" type="button" aria-label="Chuyển sang tiếng Việt" hidden>VI</button>
+        <button id="theme-toggle" type="button" aria-label="Switch color theme" hidden><span aria-hidden="true">◐</span></button>
+      </div>
+    </nav>
+  </header>
 
-    <main class="max-w-4xl mx-auto w-full px-6 py-24 md:py-32 flex-1">
-        <!-- Hero Section -->
-        <header class="mb-24">
-            <h1 class="text-4xl md:text-5xl font-semibold text-zinc-100 tracking-tight mb-6">
-                LNTruong.
-            </h1>
-            <p class="text-lg md:text-xl text-zinc-400 max-w-[45ch] leading-relaxed mb-8">
-                Software Developer focused on building robust systems and clean interfaces. I turn complex problems into simple, elegant code.
-            </p>
-            <div class="flex gap-4">
-                <a href="https://github.com/lenhattruong-blip" target="_blank" class="inline-flex items-center justify-center bg-zinc-100 text-zinc-950 px-5 py-2.5 text-sm font-medium hover:bg-white transition-colors duration-200">
-                    View GitHub
-                </a>
-                <a href="mailto:truongle1421@gmail.com" class="inline-flex items-center justify-center bg-transparent border border-zinc-800 text-zinc-300 px-5 py-2.5 text-sm font-medium hover:bg-zinc-900 transition-colors duration-200">
-                    Contact Me
-                </a>
-            </div>
-        </header>
+  <div class="page" id="top">
+    <aside class="profile" aria-labelledby="profile-name">
+      <div class="availability"><span class="status-dot"></span><span data-i18n="available">SEEKING AN INTERNSHIP</span></div>
+      <h1 id="profile-name">LE NHAT<br> TRUONG<span class="name-dot">.</span></h1>
+      <p class="role">Embedded Systems <span data-i18n="intern">Intern</span></p>
+      <p class="intro" data-i18n="intro">Final-year HUFLIT student in Microelectronics Engineering. I work across embedded hardware, sensor integration and data-driven testing.</p>
+      <div class="location"><span aria-hidden="true">↗</span><span data-i18n="location">Ho Chi Minh City, Vietnam</span></div>
+      <a class="button primary" href="cv/Le_Nhat_Truong_CV_English.pdf" download><span data-i18n="download">Download CV</span><span class="button-meta">PDF · EN ↓</span></a>
+      <a class="contact-email" href="mailto:truongle1421@gmail.com">truongle1421@gmail.com <span aria-hidden="true">↗</span></a>
+      <a class="text-link" href="https://github.com/lenhattruong-blip" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      <div class="profile-note"><span class="mono" data-i18n="focusLabel">MY FOCUS</span><p data-i18n="focus">Hardware that connects.<br>Firmware that makes it useful.</p></div>
+    </aside>
 
-        <!-- Selected Projects -->
-        <section>
-            <h2 class="text-sm font-mono text-zinc-500 uppercase tracking-widest mb-8">Selected Work</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Project 1 -->
-                <a href="#" class="group block p-6 border border-zinc-800/50 bg-zinc-900/20 hover:bg-zinc-900/50 transition-colors duration-300">
-                    <h3 class="text-lg font-medium text-zinc-100 mb-2 group-hover:text-white transition-colors">Distributed Cache System</h3>
-                    <p class="text-sm text-zinc-400 leading-relaxed mb-4">
-                        A high-performance distributed caching layer built in Go. Handles 10k+ requests per second with automatic node discovery.
-                    </p>
-                    <div class="flex gap-2">
-                        <span class="text-xs font-mono px-2 py-1 bg-zinc-800 text-zinc-300">Go</span>
-                        <span class="text-xs font-mono px-2 py-1 bg-zinc-800 text-zinc-300">gRPC</span>
-                    </div>
-                </a>
+    <main id="main">
+      <section class="opening" aria-labelledby="opening-heading">
+        <span class="eyebrow" data-i18n="openingLabel">HARDWARE / FIRMWARE / VALIDATION</span>
+        <h2 id="opening-heading" data-i18n="headline">From schematic<br>to sensor data.</h2>
+        <p data-i18n="openingText">A selection of projects built around STM32, ESP32 and digital systems — with a clear view of my contribution, the implementation and the evidence behind it.</p>
+        <div class="fact-strip">
+          <div><strong>3.63<span>/4</span></strong><span data-i18n="gpa">Cumulative GPA</span></div>
+          <div><strong>STM32 <span>+ ESP32</span></strong><span data-i18n="platforms">Embedded platforms</span></div>
+          <div><strong>2023<span> — <span data-i18n="present">Present</span></span></strong><span>HUFLIT</span></div>
+        </div>
+      </section>
 
-                <!-- Project 2 -->
-                <a href="#" class="group block p-6 border border-zinc-800/50 bg-zinc-900/20 hover:bg-zinc-900/50 transition-colors duration-300">
-                    <h3 class="text-lg font-medium text-zinc-100 mb-2 group-hover:text-white transition-colors">CLI Workflow Tool</h3>
-                    <p class="text-sm text-zinc-400 leading-relaxed mb-4">
-                        A terminal-based workflow automation tool for developers. Integrates directly with Git and project management boards.
-                    </p>
-                    <div class="flex gap-2">
-                        <span class="text-xs font-mono px-2 py-1 bg-zinc-800 text-zinc-300">Rust</span>
-                        <span class="text-xs font-mono px-2 py-1 bg-zinc-800 text-zinc-300">CLI</span>
-                    </div>
-                </a>
-            </div>
-        </section>
+      <section id="projects" class="section" aria-labelledby="projects-heading">
+        <div class="section-heading"><h2 id="projects-heading"><span class="section-number">01</span><span data-i18n="selected">Selected projects</span></h2><span class="section-note" data-i18n="evidence">CODE & PHYSICAL HARDWARE</span></div>
+
+        <article class="project-card">
+          <div class="project-visual pcb"><img src="assets/mcu-board.png" alt="Assembled STM32L4P5 MCU board, photographed on a black background" width="2400" height="1800" fetchpriority="high"><span class="visual-label" data-i18n="physicalBoard">ACTUAL HARDWARE · STM32L4P5</span><span class="project-index">01 /</span></div>
+          <div class="project-body">
+            <div class="project-meta"><span data-i18n="thesis">GRADUATION THESIS · TEAM OF 2</span><time data-i18n="thesisDate">FEB — AUG 2026</time></div>
+            <h3 data-i18n="pcbTitle">A modular, low-power STM32L4 platform</h3>
+            <p data-i18n="pcbIntro">An STM32L4P5 extension with a separate 2-layer power board and 4-layer MCU board, designed from schematic through PCB layout in Altium.</p>
+            <ul class="project-points">
+              <li data-i18n="pcbPoint1">Designed both extension boards and carried out physical bring-up; the first fabricated revision operated successfully.</li>
+              <li data-i18n="pcbPoint2">Provided SPI, I2C, UART and SWD interfaces, a 1.8 V power domain and controlled sensor power.</li>
+              <li data-i18n="pcbPoint3">Documented the hardware with board photographs, layer drawings and STM32L4P5 voltage/current plots.</li>
+            </ul>
+            <div class="tags"><span>Altium Designer</span><span>STM32L4P5</span><span>PCB design</span><span>Low power</span></div>
+            <details>
+              <summary><span data-i18n="pcbDetails">Design & measurement notes</span><span aria-hidden="true">+</span></summary>
+              <div class="detail-body"><p data-i18n="pcbNote">The extension's hardware measurements are separate from my statistical analysis of the team's STM32L432 reference-board dataset. That analysis used permutation tests and Benjamini–Hochberg adjustment; it is not a Buck/LDO benchmark of this extension. The reference dataset remains private.</p>
+              <img class="plot" src="assets/waveform-3.6V.png" alt="STM32L4P5 VBUS voltage and current during an approximately 60-second window, labelled 3.6 V" loading="lazy" width="4117" height="1711">
+              <p class="caption" data-i18n="plotNote">STM32L4P5 measurement example, 3.6 V condition. A waveform observation, not a claim of regulator efficiency or average energy savings.</p></div>
+            </details>
+            <div class="project-links"><a class="button secondary" href="https://github.com/lenhattruong-blip/stm32l4-low-power-hardware" target="_blank" rel="noopener noreferrer"><span data-i18n="viewProject">Explore project</span> ↗</a><a class="text-link" href="https://github.com/lenhattruong-blip/stm32l4-low-power-hardware/blob/main/docs/DESIGN_GALLERY.md" target="_blank" rel="noopener noreferrer"><span data-i18n="gallery">Hardware gallery</span> ↗</a></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual greenhouse"><img src="assets/greenhouse-wiring.png" alt="Greenhouse system reference diagram showing ESP32-S3, environmental, soil and CO2 sensors, relays, pump and fans" width="1432" height="805" loading="lazy"><span class="visual-label" data-i18n="systemDiagram">SYSTEM REFERENCE DIAGRAM</span><span class="project-index">02 /</span></div>
+          <div class="project-body">
+            <div class="project-meta"><span data-i18n="courseProject">COURSE PROJECT · TEAM OF 3</span><time data-i18n="greenhouseDate">DEC 2025 — MAR 2026</time></div>
+            <h3 data-i18n="greenhouseTitle">ESP32-S3 greenhouse sensor integration</h3>
+            <p data-i18n="greenhouseIntro">Migrated the sensing subsystem of a Raspberry Pi 5-based greenhouse design to ESP32-S3 N16R8, aiming to reduce cost, power consumption and system complexity.</p>
+            <ul class="project-points">
+              <li data-i18n="greenhousePoint1">Integrated environmental, soil and CO₂ sensing over I2C, UART and RS485 Modbus RTU using existing libraries.</li>
+              <li data-i18n="greenhousePoint2">Used three sensor tasks and one MQTT task with a shared-data mutex; published JSON telemetry to the application.</li>
+              <li data-i18n="greenhousePoint3">My focus was sensor acquisition and integration. Teammates handled the application and application-side automation.</li>
+            </ul>
+            <div class="tags"><span>ESP32-S3</span><span>FreeRTOS</span><span>MQTT / JSON</span><span>Modbus RTU</span></div>
+            <details>
+              <summary><span data-i18n="greenhouseDetails">Implementation & current limitations</span><span aria-hidden="true">+</span></summary>
+              <div class="detail-body"><p data-i18n="greenhouseNote">The system operated on a physical setup. The published snapshot includes MQTT retries, but has not been re-tested during portfolio preparation. The source diagram uses CO₂ GPIO 15/16 while the code uses 4/5; TLS certificate verification and Wi-Fi recovery also need further work. These limitations are documented in the repository. No measured cost or power savings are claimed.</p></div>
+            </details>
+            <div class="project-links"><a class="button secondary" href="https://github.com/lenhattruong-blip/esp32s3-greenhouse" target="_blank" rel="noopener noreferrer"><span data-i18n="viewProject">Explore project</span> ↗</a><a class="text-link" href="https://github.com/lenhattruong-blip/esp32s3-greenhouse/tree/main/firmware/Up_MQTT" target="_blank" rel="noopener noreferrer"><span data-i18n="firmware">View firmware</span> ↗</a></div>
+          </div>
+        </article>
+
+        <div class="other-projects">
+          <article><span class="eyebrow" data-i18n="digitalDesign">DIGITAL DESIGN · IN PROGRESS</span><h3 data-i18n="riscTitle">Single-cycle RISC-V CPU</h3><p data-i18n="riscText">Verilog RV32IM project covering 48 instructions. My contribution: testbenches, simulation and waveform-based debugging in Vivado. FPGA deployment and timing/resource results are not yet available.</p><span class="small-tech">Verilog / Vivado / Testbench</span></article>
+          <article><span class="eyebrow" data-i18n="computerVision">COMPUTER VISION · COURSE PROJECT</span><h3 data-i18n="yoloTitle">Vietnamese traffic-sign detection</h3><p data-i18n="yoloText">Combined two compatible datasets into 10,000+ images and tested teammate-trained YOLO26 weights with Python. Observed approximately 30 FPS on a laptop GPU; Raspberry Pi 5 deployment was planned, not completed.</p><span class="small-tech">Python / OpenCV / YOLO26</span></article>
+        </div>
+      </section>
+
+      <section id="background" class="section" aria-labelledby="background-heading">
+        <div class="section-heading"><h2 id="background-heading"><span class="section-number">02</span><span data-i18n="background">Background & toolkit</span></h2></div>
+        <div class="background-grid">
+          <div class="education"><span class="eyebrow" data-i18n="education">EDUCATION</span><h3>HUFLIT</h3><p data-i18n="school">Ho Chi Minh City University of Foreign Languages – Information Technology</p><p class="major" data-i18n="major">Specialization: Microelectronics Engineering (Kỹ thuật vi mạch)</p><span class="small-tech">2023 — <span data-i18n="present">Present</span> · GPA 3.63/4</span><h4 data-i18n="coursework">Relevant coursework</h4><p class="coursework" data-i18n="courses">Embedded Systems · Embedded Programming · Microprocessors and Microcontrollers · Digital Logic Design · Internet of Things · Intelligent Systems</p></div>
+          <div class="skills"><div><h4 data-i18n="languages">Programming</h4><p>C · Python · Verilog</p></div><div><h4 data-i18n="embedded">Embedded & connectivity</h4><p>STM32 · ESP32 · FreeRTOS<br>SPI · I2C · UART · SWD<br>RS485 / Modbus RTU · MQTT / JSON</p></div><div><h4 data-i18n="tools">Design & development tools</h4><p>Altium Designer · STM32CubeIDE<br>Arduino IDE · Vivado · Proteus</p></div><div><h4 data-i18n="data">Data & computer vision</h4><p>pandas · NumPy · OpenCV · TensorFlow</p></div></div>
+        </div>
+      </section>
+
+      <section class="contact-section" aria-labelledby="contact-heading"><span class="eyebrow" data-i18n="nextStep">THE NEXT STEP</span><h2 id="contact-heading" data-i18n="contactTitle">Let's build something useful.</h2><p data-i18n="contactText">I'm looking for an Embedded Systems internship where I can contribute to hardware–firmware integration and keep developing my engineering skills.</p><a class="button primary" href="mailto:truongle1421@gmail.com"><span data-i18n="getInTouch">Get in touch</span> ↗</a></section>
     </main>
-
-    <footer class="max-w-4xl mx-auto w-full px-6 py-8 border-t border-zinc-900">
-        <p class="text-xs text-zinc-500 font-mono">
-            © 2026 LNTruong. Built with intent.
-        </p>
-    </footer>
-
+  </div>
+  <footer><span>© 2026 Le Nhat Truong</span><span data-i18n="footer">Built around real projects. Always learning.</span><a href="#top" data-i18n="backTop">Back to top ↑</a></footer>
+  <noscript><p class="noscript-note">English content and all project links remain available without JavaScript. / Nội dung tiếng Anh và liên kết dự án vẫn sử dụng được khi tắt JavaScript.</p></noscript>
 </body>
 </html>
