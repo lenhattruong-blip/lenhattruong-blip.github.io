@@ -6,9 +6,9 @@ Static HTML, CSS and JavaScript. No build step or backend. The default content i
 
 ## Contents
 
-- Embedded Systems internship profile, education and toolkit.
+- Embedded Systems & Edge AI internship profile, education and toolkit.
 - STM32L4P5 and ESP32-S3 projects with authorized images and GitHub links.
-- Additional RISC-V and YOLO26 project descriptions without invented repository links.
+- RISC-V and YOLO26 project descriptions with links to evidence-only repositories. Edge AI is a career direction; embedded AI deployment remains planned.
 - Downloadable English CV; no contact form or analytics tracker.
 
 The STM32L432 raw dataset, native Altium files and deployment secrets are excluded. The existing CNAME must remain `lntruong.is-a.dev`. Keep technical limitations and team-contribution attribution when updating project descriptions.

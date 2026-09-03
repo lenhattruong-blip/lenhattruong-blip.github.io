@@ -1,11 +1,11 @@
 'use strict';
 const vi = {
   skip:'Đến nội dung chính', portfolio:'HỒ SƠ KỸ THUẬT', navProjects:'Dự án', navBackground:'Học vấn',
-  available:'TÌM KIẾM CƠ HỘI THỰC TẬP', intern:'— Thực tập sinh',
-  intro:'Sinh viên năm cuối HUFLIT, chuyên ngành Kỹ thuật vi mạch. Mình tập trung vào phần cứng nhúng, tích hợp cảm biến và kiểm thử dựa trên dữ liệu.',
+  available:'TÌM KIẾM CƠ HỘI THỰC TẬP', intern:'Tìm cơ hội thực tập',
+  intro:'Sinh viên năm cuối HUFLIT, chuyên ngành Kỹ thuật vi mạch, có kinh nghiệm về phần cứng nhúng, tích hợp cảm biến và thị giác máy tính bằng Python. Mình mong muốn kết hợp các kỹ năng này để phát triển ứng dụng Edge AI.',
   location:'TP. Hồ Chí Minh, Việt Nam', download:'Tải CV tiếng Anh', focusLabel:'ĐỊNH HƯỚNG',
-  focus:'Kết nối phần cứng.\nTạo giá trị bằng firmware.', openingLabel:'PHẦN CỨNG / FIRMWARE / KIỂM THỬ',
-  headline:'Từ sơ đồ mạch\nđến dữ liệu cảm biến.', openingText:'Các dự án với STM32, ESP32 và hệ thống số — trình bày rõ phần mình phụ trách, cách triển khai và bằng chứng kỹ thuật.',
+  focus:'Kết hợp phần cứng nhúng\nvới thị giác máy tính.', openingLabel:'PHẦN CỨNG / FIRMWARE / THỊ GIÁC MÁY TÍNH',
+  headline:'Từ sơ đồ mạch\nđến dữ liệu cảm biến.', openingText:'Các dự án phần cứng STM32, tích hợp cảm biến ESP32, thiết kế số và thị giác máy tính với YOLO — nền tảng cho định hướng Edge AI của mình, với phần đóng góp và bằng chứng kỹ thuật rõ ràng.',
   gpa:'GPA tích lũy', platforms:'Nền tảng nhúng', present:'Hiện tại', selected:'Dự án nổi bật', evidence:'MÃ NGUỒN & PHẦN CỨNG THỰC TẾ',
   physicalBoard:'BOARD THỰC TẾ · STM32L4P5', thesis:'KHÓA LUẬN TỐT NGHIỆP · NHÓM 2 NGƯỜI', thesisDate:'02 — 08/2026',
   pcbTitle:'Nền tảng STM32L4 tiết kiệm năng lượng dạng mô-đun',
@@ -47,7 +47,7 @@ const vi = {
   courses:'Hệ thống nhúng · Lập trình nhúng · Vi xử lý – Vi điều khiển · Thiết kế luận lý số · Internet vạn vật · Hệ thống thông minh',
   languages:'Ngôn ngữ lập trình', embedded:'Hệ thống nhúng & kết nối', tools:'Công cụ thiết kế & phát triển', data:'Dữ liệu & thị giác máy tính',
   nextStep:'BƯỚC TIẾP THEO', contactTitle:'Cùng tạo ra sản phẩm hữu ích.',
-  contactText:'Mình đang tìm cơ hội thực tập Embedded Systems để đóng góp vào việc tích hợp phần cứng–firmware và tiếp tục phát triển năng lực kỹ thuật.',
+  contactText:'Mình đang tìm cơ hội thực tập Embedded Systems và Edge AI, đóng góp vào tích hợp phần cứng–firmware hoặc ứng dụng thị giác máy tính, đồng thời học cách triển khai và tối ưu mô hình AI trên thiết bị nhúng.',
   getInTouch:'Liên hệ với mình', footer:'Dự án thật. Không ngừng học hỏi.', backTop:'Về đầu trang ↑'
 };
 const nodes = [...document.querySelectorAll('[data-i18n]')];
@@ -67,7 +67,7 @@ function setLanguage(next) {
   languageButton.textContent = language === 'en' ? 'VI' : 'EN';
   languageButton.setAttribute('aria-label', language === 'en' ? 'Chuyển sang tiếng Việt' : 'Switch to English');
   languageButton.lang = language === 'en' ? 'vi' : 'en';
-  document.title = language === 'en' ? 'Le Nhat Truong | Embedded Systems' : 'Le Nhat Truong | Hệ thống nhúng';
+  document.title = language === 'en' ? 'Le Nhat Truong | Embedded Systems & Edge AI' : 'Le Nhat Truong | Hệ thống nhúng & Edge AI';
   updateThemeLabel();
 }
 function isDark() { return document.documentElement.dataset.theme ? document.documentElement.dataset.theme === 'dark' : media.matches; }
